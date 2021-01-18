@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="StandardWorks.BookOfMormon.Title"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StandardWorks.BookOfMormon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer ZoomMode="Enabled" MinZoomFactor="0.1" MaxZoomFactor="7" HorizontalScrollBarVisibility="Visible" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                  VerticalScrollBarVisibility="Visible">
+
+            <Grid>
+                <Image x:ConnectionId='2' Name="PdfImage"></Image>
+
+                <Border BorderBrush="Transparent" Height="Auto" Width="Auto">
+                    <InkCanvas x:ConnectionId='3' x:Name="InkCanvas"/>
+                </Border>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
+
